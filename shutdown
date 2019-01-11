@@ -1,0 +1,11 @@
+#!/bin/bash
+echo 'If you want shutdown your machine input "Q"'
+echo 'Input "quit" if you want to exit.'
+read y in Q quit
+   case "$y" in 
+    "Q") /sbin/shutdown -h now ;;
+    "quit") exit ;;
+    *) echo "No value" ;;
+   esac
+
+
